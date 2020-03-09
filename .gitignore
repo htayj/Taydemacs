@@ -3,4 +3,4 @@
 *.log
 tmp/
 +cred.el
-/+cred.el
+*cred.el
