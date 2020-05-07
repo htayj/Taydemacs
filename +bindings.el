@@ -41,3 +41,9 @@
          :desc "PascalCase"    "C" 'string-inflection-camelcase
          :desc "snake_case"    "s" 'string-inflection-underscore
          :desc "kebab-case"    "k" 'string-inflection-kebab-case)))
+
+;; exwm prefix
+(define-prefix-command 'taymacs/metaspace-map)
+
+(general-def taymacs/metaspace-map
+  "w" 'winner-ring)

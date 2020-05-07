@@ -29,6 +29,8 @@
             ([?\M-u] . evil-move-divider-to-down)
             ([?\M-y] . evil-move-divider-to-left)
             ([?\M-o] . evil-move-divider-to-right)
+            ([?\M-o] . evil-move-divider-to-right)
+            (,(kbd "<XF86TouchpadOff>") . taymacs/metaspace-map)
             ;; 's-r': Reset (to line-mode).
             ([?\s-r] . exwm-reset)
             ;; 's-w': Switch workspace.
@@ -74,12 +76,13 @@
   (require 'exwm-config)
 
   (exwm-config-custom)
-  (exwm-input-set-key (kbd "M-h") #'evil-window-left)
-  (exwm-input-set-key (kbd "M-j") #'evil-window-down)
-  (exwm-input-set-key (kbd "M-k") #'evil-window-up )
-  (exwm-input-set-key (kbd "M-l") #'evil-window-right)
-  (exwm-input-set-key (kbd "M-u") #'evil-window-decrease-height)
-  (exwm-input-set-key (kbd "M-i") #'evil-window-increase-height)
+  ;; (exwm-input-set-key (kbd "M-h") #'evil-window-left)
+  ;; (exwm-input-set-key (kbd "M-j") #'evil-window-down)
+  ;; (exwm-input-set-key (kbd "M-k") #'evil-window-up )
+  ;; (exwm-input-set-key (kbd "M-l") #'evil-window-right)
+  ;; (exwm-input-set-key (kbd "M-u") #'evil-window-decrease-height)
+  ;; (exwm-input-set-key (kbd "M-i") #'evil-window-increase-height)
+  ;; (exwm-input-set-key (kbd "<XF86TouchpadOff>") 'taymacs/metaspace-map)
   (exwm-input-set-key (kbd "M-SPC") #'counsel-linux-app)
   (exwm-input-set-key (kbd "M-f") #'doom/window-maximize-buffer)
   (exwm-input-set-key (kbd "M-RET") #'eshell-toggle) ; Currently not working

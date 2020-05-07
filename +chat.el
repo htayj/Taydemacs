@@ -1,7 +1,7 @@
 ;;; ~/.doom.d/+chat.el -*- lexical-binding: t; -*-
 
 
-(load! "chatcred")
+(load! "+chatcred")
 (load! "+signald")
 ;; (load! "bitlbee")
 (after! erc

@@ -79,10 +79,10 @@
 ;; they are implemented.
 
 ;; emojify modeline mode doesnt work correctly, makes focus wierd
-(use-package! emojify)
-(after! emojify
-  (global-emojify-mode t)
-  (global-emojify-mode-line-mode nil))
+;; (use-package! emojify)                 ;
+;; (after! emojify
+;;   (global-emojify-mode t)
+;;   (global-emojify-mode-line-mode nil))
 ;; w3m for web browsing
 
 

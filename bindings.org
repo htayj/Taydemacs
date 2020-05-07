@@ -1,0 +1,27 @@
+#+TITLE: bindings
+
+* general philosophy
+** alternating hands is faster
+source:
+strings of keys should go between hands as much as possible
+
+** dual leader keys
+- actions in text editor mode are different from actions in wm mode.
+- exwm needs a leader that does not interferre with any keys in any applications (F23 was chosen for this)
+- the 2nd leader will be called metaspace or MSPC
+- separation of actions into two groups - manipulate text (space) & manipulate emacs (metaspace)
+- ( MSPC > ( ( meta minor ) ( SPC > ( space minor ) ) ) )
+* metaspace
+** metaspace shall work in ALL contexts as a truly global leader
+** metaspace shall NOT be dependent on:
+- the item under point
+- the focused window
+- the focused frame
+- the current layout of anything on the screen
+*** where dependence is defined as the user needing to know the state of the thing in question to know the action taken or outcome of the action
+** there is allotted one key in metaspace (MSPC m, meta minor) that may be dependent on:
+- whether the currently focused window is exwm or not
+- the tag of the window (exwm, social, normal)
+- the program that is running in the exwm buffer
+** it shall always be possible to reach SPC from metaspace via MSPC SPC
+** using MSPC SPC is a sin
